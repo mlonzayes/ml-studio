@@ -75,7 +75,7 @@ export default function HeroSection() {
             </Link>
             
             <Link 
-              href="#projects"
+              href="#proyectos"
               className="border border-white/10 hover:border-white/20 bg-zinc-800/50 hover:bg-white/10 
                        text-white px-8 py-4 rounded-full text-lg font-medium
                        backdrop-blur-sm transition-all duration-300"

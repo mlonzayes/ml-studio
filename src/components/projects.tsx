@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function ProjectsSection() {
@@ -11,14 +12,14 @@ export default function ProjectsSection() {
     {
       title: "South Conga",
       description: "Plataforma de venta de entradas, Next.js y Mercado Pago",
-      image: "./projects/south_conga.png",
+      image: "/projects/south_conga.png", // Nota el "/" al inicio
       tags: ["Next.js", "Mercado Pago", "TailwindCSS", "Vercel", "Django Rest Framework"],
       link: "https://southconga.com.ar/"
     },
     {
       title: "Fiesta Nacional de la Frutilla",
       description: "Plataforma de venta de entradas, Next.js y Mercado Pago",
-      image: "./projects/fiesta_nacional_frutilla.png",
+      image: "/projects/fiesta_nacional_frutilla.png", // Nota el "/" al inicio
       tags: ["Next.js", "MODO", "TailwindCSS", "Vercel", "Node.js"],
       link: "https://fiestanacionaldelafrutilla.com.ar/"
     }
@@ -64,13 +65,16 @@ export default function ProjectsSection() {
                   className="w-full flex-shrink-0 px-2 md:px-4"
                 >
                   <div className="bg-zinc-900/50 border border-white/5 rounded-xl md:rounded-2xl overflow-hidden">
-                    <div className="aspect-[16/9] relative">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
+                  <div className="aspect-[16/9] relative">
+  <Image
+    src={project.image}
+    alt={project.title}
+    width={1920}
+    height={1080}
+    className="object-cover w-full h-full"
+    priority={idx === 0}
+  />
+</div>
                     <div className="p-4 md:p-6">
                       <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 font-display">
                         {project.title}

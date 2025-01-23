@@ -48,7 +48,7 @@ export default function TestimonialsSection() {
           setIsResetting(true);
           return prev;
         }
-        return prev - 0.15; // Movimiento más lento
+        return prev - 0.15;
       });
     }, 50);
 
@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
         <div className="relative overflow-hidden">
           <motion.div
             animate={{ x: `${position}%` }}
-            transition={{ duration: isResetting ? 0 : 0.5 }} // Transición más suave
+            transition={{ duration: isResetting ? 0 : 0.5 }}
             className="flex gap-6 mb-8"
           >
             {duplicatedTestimonials.map((testimonial, idx) => (
@@ -105,7 +105,7 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
                 <p className="text-gray-300 mb-6 line-clamp-4">
-                  "{testimonial.comment}"
+                  &ldquo;{testimonial.comment}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
