@@ -1,8 +1,8 @@
-// components/navbar.tsx
 'use client';
 
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -25,8 +25,18 @@ export default function Navbar() {
         className="mx-auto max-w-full bg-black/70 backdrop-blur-lg border border-white/10 rounded-none sm:rounded-full"
       >
         <div className="flex items-center justify-between px-4 py-2">
-          <Link href="/" className="text-white font-display text-lg">
-            Mateo Lonzayes
+          <Link href="/" className="flex items-center space-x-3 text-white">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white/10">
+              <Image
+                src="/profile/profile-pic.jpg" // Asegúrate de tener tu imagen en la carpeta public
+                alt="Mateo Lonzayes"
+                fill
+                className="object-cover"
+                sizes="32px"
+                priority
+              />
+            </div>
+            <span className="font-display text-lg">Mateo Lonzayes</span>
           </Link>
 
           {/* Desktop Menu */}
