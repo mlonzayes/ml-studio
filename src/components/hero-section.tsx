@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className="relative w-full min-h-screen overflow-hidden bg-black">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
-        <div className="w-full h-full scale-150 -translate-y-24">
+        <div className="w-full h-full scale-125 -translate-y-16 -translate-x-8 rotate-12">
           <Spline
             scene="https://prod.spline.design/GAJji654eUULLk4e/scene.splinecode"
             className="w-full h-full"
