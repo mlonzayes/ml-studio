@@ -17,6 +17,13 @@ export default function ProjectsSection() {
       link: "https://southconga.com.ar/"
     },
     {
+      title: "Plataforma de cursos",
+      description: "Plataforma de venta de cursos, Next.js y Mercado Pago",
+      image: "/projects/mariano_martinez.png", // Nota el "/" al inicio
+      tags: ["Next.js", "Mercado Pago", "TailwindCSS", "Vercel"],
+      link: "https://mariannomartinez.com/"
+    },
+    {
       title: "Fiesta Nacional de la Frutilla",
       description: "Plataforma de venta de entradas, Next.js y Mercado Pago",
       image: "/projects/fiesta_nacional_frutilla.png", // Nota el "/" al inicio

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
-  <!-- Fondo transparente (no es necesario agregar nada, ya que es transparente por defecto) -->
-
-  <!-- Letra M -->
-  <path d="M 20 80 L 20 20 L 40 50 L 60 20 L 60 80" fill="none" stroke="black" stroke-width="5" />
-
-  <!-- Letra L -->
-  <path d="M 100 20 L 100 80 L 160 80" fill="none" stroke="black" stroke-width="5" />
-</svg>
