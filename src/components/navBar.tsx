@@ -25,7 +25,7 @@ export default function Navbar() {
         className="mx-auto max-w-full bg-black/70 backdrop-blur-lg border border-white/10 rounded-none sm:rounded-full"
       >
         <div className="flex items-center justify-between px-4 py-2">
-          <Link href="/" className="flex items-center space-x-3 text-white">
+          <Link href="/profile" className="flex items-center space-x-3 text-white">
             <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white/10">
               <Image
                 src="/profile/profile-pic.jpg" // Asegúrate de tener tu imagen en la carpeta public

@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import ProjectsSection from "@/components/projects";
 import Navbar from "@/components/navBar";
 import TestimonialsSection from "@/components/clients";
+import PaymentMethods from "@/components/payment-methods";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
@@ -18,6 +19,7 @@ export default function Home() {
       <ProjectsSection  />
       <TestimonialsSection />
       <CTASection />
+      <PaymentMethods />
       <Footer />
     </main>
   )
